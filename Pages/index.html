@@ -19,7 +19,7 @@
             
             <div id="todo-title" class="infos"> TODO </div>
             <div id="profile-picture" class="infos">  </div>
-            <button type="button" id="add-button" class="infos"> Add </button>
+            <button type="button" id="add-button" class="infos" onclick="showInputBox()"> Add </button>
 
 
         </div>
@@ -29,29 +29,15 @@
                 <div id="body-title"> List </div>
                 <div id="list-items"> 
                     <div class="task"> 
+
                         <input type="checkbox" class="task-checkbox">
                         <div class="task-description"> Finish javascript</div> 
-                        <button type="button" class="delete-task"> 
 
+                        <button type="button" class="delete-task"> 
                             <img src="delete.png" alt="delete icon" class="delete-icon">
                         </button>
                         
                     </div>
-<!-- 
-                    <div class="task"> 
-                        <input type="checkbox" class="task-checkbox">
-                        <div class="task-description"> CSC300 Lecture</div> 
-                    </div>
-                    
-                    <div class="task"> 
-                        <input type="checkbox" class="task-checkbox">
-                        <div class="task-description"> Movies </div> 
-                    </div>
-
-                    <div class="task"> 
-                        <input type="checkbox" class="task-checkbox">
-                        <div class="task-description"> Sleep</div> 
-                    </div> -->
 
                     
 
@@ -62,8 +48,27 @@
         </div>
 
     </div>
-    
 
+    <!-- Task input goes here -->
+
+    <div id="input-box-page"></div>
+    <div id="input-gui">
+        <div id="input-title"> What do you want to finish? </div>
+
+        <div id="input-box"> 
+            <input type="text" placeholder="Enter Task ToDo" id="task-input-field" autofocus>
+        </div>
+
+    </div>  
+    
+    <button id="close-input-box" onclick="hideInputBox()"> X </button>
+
+
+
+
+
+    
+    <script src="scripts.js"></script>
 
 </body>
 
